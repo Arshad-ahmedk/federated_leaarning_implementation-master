@@ -26,7 +26,7 @@ Federated learning is a machine learning approach where the model is trained acr
    - *Traditional ML*: Relies on centralized infrastructure with high computational power.
    - *Federated Learning*: Utilizes local devices (like smartphones or edge devices) for training, making it more resource-efficient.
  
-##Market Value of Federated Learning
+## Market Value of Federated Learning
 The global **Federated Learning market** is expected to grow significantly in the next decade, driven by increased concerns around privacy, the demand for decentralized computing, and growth in edge devices (IoT, mobile devices, etc.).
 
 - **Market Size**: The market was valued at around $94 million in 2021 and is expected to reach $210 million by 2026, growing at a compound annual growth rate (CAGR) of over 17% (estimates vary depending on the source).
@@ -34,19 +34,19 @@ The global **Federated Learning market** is expected to grow significantly in th
 
 ## Real-Time Implementations of Federated Learning with Examples
 
-###1.Google (Gboard)
+### 1.Google (Gboard)
 - **Use Case**: Google was one of the first companies to apply federated learning with Gboard, its on-device keyboard app.
 - **Implementation**: Federated learning is used to improve next-word predictions and autocorrect functionalities on users’ keyboards without sending the typed text to Google’s servers. The model is updated based on the users' typing patterns while keeping their data on the device.
 
-###2.Apple (Siri and iOS)
+### 2.Apple (Siri and iOS)
 - **Use Case**: Apple uses federated learning in Siri and other iOS features.
 - **Implementation**: It helps improve voice recognition and personalization features while keeping sensitive data, such as voice commands, on the device rather than sending them to Apple's cloud servers.
 
-###3.NVIDIA (Healthcare)
+### 3.NVIDIA (Healthcare)
 - **Use Case**: NVIDIA has been working on federated learning in healthcare.
 - **Implementation**: In collaboration with King’s College London and Owkin, NVIDIA developed a federated learning system to train models on medical imaging data from multiple hospitals without having to centralize the data. This helps hospitals improve predictive models for disease diagnosis while complying with stringent privacy regulations.
 
-###4.Intel (Edge Computing and Autonomous Driving)
+### 4.Intel (Edge Computing and Autonomous Driving)
 - **Use Case**: Intel has applied federated learning in edge computing and autonomous driving.
 - **Implementation**: In collaboration with BMW and other automotive companies, Intel is developing decentralized models that allow vehicles to improve their driving algorithms by sharing model updates across a network of connected cars, without sharing raw driving data.
 
