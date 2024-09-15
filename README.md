@@ -6,6 +6,7 @@ This project implements federated learning to predict mental health conditions b
 
 Federated learning is a machine learning approach where the model is trained across multiple decentralized devices or servers, each holding their own local data samples. Instead of sharing data, only the model updates (gradients) are sent to a central server, ensuring data privacy and security. This approach is especially useful when sensitive data, such as personal health information, cannot be shared across different parties.
 *For More Clarification Watch This Youtube Video [What is Federated Learning? by Google Cloud Tech](https://youtu.be/X8YYWunttOY?si=Mf1OgyA0-LUxXaIz)*.
+*Want More Resources? Do Your Own Research!*
 
 ![fl-graph](https://github.com/user-attachments/assets/2307fcbe-6053-475b-8168-d5968fc279d9)
 
