@@ -50,5 +50,6 @@ Two types of clients: individual users and therapists.
 
 ### 1. Clone the Repository
 ```git clone https://github.com/Arshad-ahmedk/federated_leaarning_implementation-master.git```
+
 ```cd FederatedLearningProject```
 
