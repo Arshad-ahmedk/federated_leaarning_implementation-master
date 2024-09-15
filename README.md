@@ -6,15 +6,49 @@ This project implements federated learning to predict mental health conditions b
 
 Federated learning is a machine learning approach where the model is trained across multiple decentralized devices or servers, each holding their own local data samples. Instead of sharing data, only the model updates (gradients) are sent to a central server, ensuring data privacy and security. This approach is especially useful when sensitive data, such as personal health information, cannot be shared across different parties.
 
-### Key Differences Between Federated Learning and Traditional Machine Learning:
+![fl-graph](https://github.com/user-attachments/assets/2307fcbe-6053-475b-8168-d5968fc279d9)
 
-- **Data Privacy**: Federated learning keeps data local on users' devices, while traditional machine learning typically requires centralized data collection.
-- **Decentralization**: Federated learning enables model training on decentralized data across multiple locations, while traditional machine learning relies on data stored in a single, central location.
-- **Security**: Since data is not transferred in federated learning, the risk of data breaches is reduced. Traditional machine learning exposes data to higher security risks through data transfer and central storage.
-- **Performance**: Federated learning can handle data heterogeneity (i.e., non-iid data) across different devices, whereas traditional machine learning requires homogenized data for better performance.
-- **Security**:
-   - *Federated Learning*: Only model updates are shared; raw data is not exposed.
-   - *Traditional ML*: Data transfer to central storage increases security risks.
+### How Federated Learning Differs from Traditional Machine Learning:
+
+- **Data Centralization**:
+   - *Traditional ML*: Data from various sources is centralized in one location (typically on a server) for training.
+   - *Federated Learning*: Data remains decentralized across multiple devices, and only model parameters are shared.
+- **Privacy and Security**:
+   - *Traditional ML*: All data must be transferred to a single server, which can expose it to privacy risks.
+   - *Federated Learning*: Data remains on local devices, reducing the risk of data breaches or leaks.
+- **Communication Overhead**:
+   - *Traditional ML*: Involves less frequent communication between servers and devices (as data is transferred once for training).
+   - *Federated Learning*: Requires constant communication between devices and the server to update the global model, but the size of communication is smaller (only model updates).
+- **Scalability**:
+   - *Traditional ML*: May face limitations due to data storage and computing power requirements on a central server.
+   - *Federated Learning*: Scales well with the number of devices since computations are distributed across local clients.
+- **Resource Efficiency**:
+   - *Traditional ML*: Relies on centralized infrastructure with high computational power.
+   - *Federated Learning*: Utilizes local devices (like smartphones or edge devices) for training, making it more resource-efficient.
+ 
+##Market Value of Federated Learning
+The global **Federated Learning market** is expected to grow significantly in the next decade, driven by increased concerns around privacy, the demand for decentralized computing, and growth in edge devices (IoT, mobile devices, etc.).
+
+- **Market Size**: The market was valued at around $94 million in 2021 and is expected to reach $210 million by 2026, growing at a compound annual growth rate (CAGR) of over 17% (estimates vary depending on the source).
+- **Key Drivers**: Data privacy regulations (like GDPR), the growing adoption of IoT and edge devices, and industries like healthcare and finance needing secure ways to leverage sensitive data.
+
+## Real-Time Implementations of Federated Learning with Examples
+
+###1.Google (Gboard)
+- **Use Case**: Google was one of the first companies to apply federated learning with Gboard, its on-device keyboard app.
+- **Implementation**: Federated learning is used to improve next-word predictions and autocorrect functionalities on users’ keyboards without sending the typed text to Google’s servers. The model is updated based on the users' typing patterns while keeping their data on the device.
+
+###2.Apple (Siri and iOS)
+- **Use Case**: Apple uses federated learning in Siri and other iOS features.
+- **Implementation**: It helps improve voice recognition and personalization features while keeping sensitive data, such as voice commands, on the device rather than sending them to Apple's cloud servers.
+
+###3.NVIDIA (Healthcare)
+- **Use Case**: NVIDIA has been working on federated learning in healthcare.
+- **Implementation**: In collaboration with King’s College London and Owkin, NVIDIA developed a federated learning system to train models on medical imaging data from multiple hospitals without having to centralize the data. This helps hospitals improve predictive models for disease diagnosis while complying with stringent privacy regulations.
+
+###4.Intel (Edge Computing and Autonomous Driving)
+- **Use Case**: Intel has applied federated learning in edge computing and autonomous driving.
+- **Implementation**: In collaboration with BMW and other automotive companies, Intel is developing decentralized models that allow vehicles to improve their driving algorithms by sharing model updates across a network of connected cars, without sharing raw driving data.
 
 ## Project Overview
 This Project presents a federated learning framework for heart disease prediction using Flower (flwr), where individual users and therapists can participate. Here is an overview and a few suggestions for improvement or clarification:
