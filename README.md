@@ -49,8 +49,6 @@ Two types of clients: individual users and therapists.
 ## Steps to Run This Project
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/FederatedLearningProject.git
-cd FederatedLearningProject
-   
+```git clone https://github.com/Arshad-ahmedk/federated_leaarning_implementation-master.git```
+```cd FederatedLearningProject```
 
