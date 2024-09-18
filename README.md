@@ -95,6 +95,7 @@ Two types of clients: individual users and therapists.
 
 ### 4. Run Initial client 
 ```python client_initial.py --file_path dataset.csv --input_dim 14 --num_classes 4```
+
 *run clien_initial.py 2 times with different dataset to initialise the global model.*
 
 ### 4. Run Individual clients
@@ -102,6 +103,7 @@ Two types of clients: individual users and therapists.
 
 ### 5. Run Therapist clients
 ```python client_therapist.py --file_path test_data.csv --input_dim 14 --num_classes 4 --is_testing```
+
 *Delete Predicted class index colunm if previously exixted in testdataset before executing*
 
 
